@@ -22,3 +22,15 @@ Other Notes
 
 To Start
 :	./runBlog.sh [docker-machine-name] [container-name] [bind-port]
+
+### Workflow
+
+1. Prepare Docker machine
+2. Create Volume Container to persist blog content (e.g. blogcontent)
+3. Clone Git repository
+4. Build Docker image
+5. Launch Docker container using "runBlog.sh"
+```bash
+ $runBlog.sh         default              blog                80
+|----CMD----| |--docker machine--| |--Container Name--| |--bind port--|
+```
