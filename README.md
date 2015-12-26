@@ -15,7 +15,7 @@ blog-gohugo.io
 :	Also see runBlog.sh
 
 4. Access Docker Machine (when IP changes)
-:	aws ec2 authorize-security-group-egress --group-id sg-b35657d5 --cidr $(publicip)/32 --protocol tcp --port 0-65535
+:	aws ec2 authorize-security-group-egress --group-id [sg-id] --cidr $(publicip)/32 --protocol tcp --port 0-65535
 
 Other Notes
 :	The CMD instruction doesn't support variables, needed to create a symbolic link to the theme
