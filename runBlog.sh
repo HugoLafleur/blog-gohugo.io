@@ -7,7 +7,6 @@ PORT=80
 docker run -d \
   -p $PORT:$PORT \
     --name blog \
-    --volumes-from blogcontent \
     blog \
     hugo server \
         --buildDrafts \
