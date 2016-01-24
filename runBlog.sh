@@ -1,16 +1,15 @@
 #!/bin/bash
 # To Start
 
-DENV=$1
-NAME=$2
-PORT=$3
+DENV=$DOCKER_MACHINE_NAME
+PORT=80
 
 docker run -d \
   -p $PORT:$PORT \
-    --name $NAME \
+    --name blog \
     --volumes-from blogcontent \
     blog \
-    server \
+    hugo server \
         --buildDrafts \
         --buildFuture \
         --logFile=/var/log/hugo/server.log \
