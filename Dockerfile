@@ -9,4 +9,4 @@ ADD logs /var/log/hugo
 
 WORKDIR /blog
 
-ENTRYPOINT ["hugo"]
+CMD ["hugo", "--buildDrafts=true", "--theme=current"]
