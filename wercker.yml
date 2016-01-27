@@ -1,0 +1,6 @@
+box: debian
+build:
+  steps:
+    - arjen/hugo-build:
+        version: "HEAD"
+        flags: --buildDrafts=true
