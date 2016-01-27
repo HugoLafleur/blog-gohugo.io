@@ -12,7 +12,6 @@ docker run -d \
         --buildDrafts \
         --buildFuture \
         --logFile=/var/log/hugo/server.log \
-        --theme=current\
         --bind=0.0.0.0 \
         --baseURL=http://$(docker-machine ip $DENV) \
         --appendPort=true \
